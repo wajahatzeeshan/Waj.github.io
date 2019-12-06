@@ -1,0 +1,52 @@
+//Element selectors
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+//Class selectors .classname
+.warning {
+    color: orange;
+    font-weight: bold;
+}    
+//ID selectors #idname
+#danger {
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+//Descendant selectors .classname element {}
+.warning p {
+    color: violet;
+}
+//Grouping selectors
+h4, h5 { color: green; }
+
+section h6 { color: blue; }
+section h4, 
+section h5 { 
+    color: pink; 
+}
+
+section h4,
+h5 {
+    background-color: black;
+}
+
+//Pseudo-classes: specify styling in these states.
+a.example:link {
+    color: #c02d28;
+}
+a.example:visited {
+    color: blue;
+}
+a.example:focus {
+    border: 3px dotted black;
+}
+a.example:hover {
+    color: purple;
+    font-weight: bold;
+}
+a.example:active {
+    color: #7c8e88;
+}
